@@ -52,22 +52,22 @@
         </div>
       </div>
       <div class="pt-5">
-        <form @submit.prevent="">
+        <form name="PropertySubscribers4/7/23" netlify>
           <div class="row has-text-left">
             <div class="input-group">
-              <p for="fname">First Name</p>
+              <p for="first_name">First Name</p>
               <input
                 type="text"
-                id="fname"
+                id="first_name"
                 />
                 <!-- placeholder="First Name" -->
                 <!-- v-model="formData.first_name" -->
             </div>
             <div class="input-group">
-              <p for="lname">Last Name</p>
+              <p for="last_name">Last Name</p>
               <input
                 type="text"
-                id="lname"
+                id="last_name"
                 />
                 <!-- placeholder="Last Name" -->
                 <!-- v-model="formData.last_name" -->
@@ -84,13 +84,13 @@
                 <!-- v-model="formData.email" -->
             </div>
             <div class="input-group">
-              <p for="phone">Phone Number</p>
+              <p for="phone_number">Phone Number</p>
               <input
                 type="number"
-                id="phone"
+                id="phone_number"
                 />
                 <!-- placeholder="Phone Number" -->
-                <!-- v-model="formData.phone" -->
+                <!-- v-model="formData.phone_number" -->
             </div>
           </div>
           <div class="row has-text-left">
@@ -100,7 +100,7 @@
               <!-- class="select" -->
               <select
                 id="country"
-                name="Country"
+                name="country"
                 >
                 <!-- v-model="formData.country" -->
                 <option value="" selected disabled></option>
@@ -158,24 +158,24 @@
           
             <div class="has-text-left">
               <div class="input-group">
-                <p for="callYou">What would you like us to call you?</p>
+                <p for="what_we_call_you">What would you like us to call you?</p>
                 <input
                   type="text"
-                  id="callYou"
+                  id="what_we_call_you"
                   placeholder=""
                   />
-                  <!-- v-model="formData.callYou" -->
+                  <!-- v-model="formData.what_we_call_you" -->
               </div>
             </div>
             <div class="has-text-left">
               <div class="input-group">
-                <p for="aboutUs">How did you hear about us?</p>
+                <p for="how_you_hear_about_us">How did you hear about us?</p>
                 <input
                   type="text"
-                  id="aboutUs"
+                  id="how_you_hear_about_us"
                   placeholder=""
                   />
-                  <!-- v-model="formData.aboutUs" -->
+                  <!-- v-model="formData.how_you_hear_about_us" -->
               </div>
             </div>
             <div class="">
