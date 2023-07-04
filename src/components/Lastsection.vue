@@ -51,168 +51,29 @@
           </p> -->
         </div>
       </div>
-      <form
-    name="ask-question"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    >
-    <input type="hidden" name="form-name" value="ask-question" />
-    <label v-for="(panelist, index) in panelists" :key="index">
-      <input
-        type="radio"
-        name="panelist"
-        :value="panelist"
-        @input="ev => updatePanelist"
-        :checked="panelist === currentPanelist"
-      />
-      <span>{{ panelist }}</span>
-    </label>
-    ...
-    <button>Submit</button>
-  </form>
       <div class="pt-5">
         <!-- method="post" -->
-        <form name="property_subscribers" 
+        <form
+      name="ask-question"
+      method="post"
       data-netlify="true"
-      data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="property_subscribers" />
-          <div class="row has-text-left">
-            <div class="input-group">
-              <p for="first_name">First Name</p>
-              <input
-                type="text"
-                id="first_name"
-                />
-                <!-- placeholder="First Name" -->
-                <!-- v-model="formData.first_name" -->
-            </div>
-            <div class="input-group">
-              <p for="last_name">Last Name</p>
-              <input
-                type="text"
-                id="last_name"
-                />
-                <!-- placeholder="Last Name" -->
-                <!-- v-model="formData.last_name" -->
-            </div>
-          </div>
-          <div class="row has-text-left">
-            <div class="input-group">
-              <p for="email">Email</p>
-              <input
-                type="email"
-                id="email"
-                />
-                <!-- placeholder="Email" -->
-                <!-- v-model="formData.email" -->
-            </div>
-            <div class="input-group">
-              <p for="phone_number">Phone Number</p>
-              <input
-                type="number"
-                id="phone_number"
-                />
-                <!-- placeholder="Phone Number" -->
-                <!-- v-model="formData.phone_number" -->
-            </div>
-          </div>
-          <div class="row has-text-left">
-            <div class="input-group">
-              <!-- <input type="text" id="country" placeholder="Country" v-model="country"> -->
-              <p for="country">Country</p>
-              <!-- class="select" -->
-              <select
-                id="country"
-                name="country"
-                >
-                <!-- v-model="formData.country" -->
-                <option value="" selected disabled></option>
-                <option>Nigeria</option>
-                <!-- <option>Ghana</option> -->
-              </select>
-            </div>
-            <div class="input-group">
-              <!-- <input type="text" id="state" placeholder="State" v-model="state"> -->
-              <p for="state">State</p>
-              <select id="state" name="state" 
-              >
-              <!-- v-model="formData.state" -->
-                <option selected disabled>--Select State--</option>
-                <option value="Abia">Abia</option>
-                <option value="Adamawa">Adamawa</option>
-                <option value="Akwa Ibom">Akwa Ibom</option>
-                <option value="Anambra">Anambra</option>
-                <option value="Bauchi">Bauchi</option>
-                <option value="Bayelsa">Bayelsa</option>
-                <option value="Benue">Benue</option>
-                <option value="Borno">Borno</option>
-                <option value="Cross Rive">Cross River</option>
-                <option value="Delta">Delta</option>
-                <option value="Ebonyi">Ebonyi</option>
-                <option value="Edo">Edo</option>
-                <option value="Ekiti">Ekiti</option>
-                <option value="Enugu">Enugu</option>
-                <option value="FCT">Federal Capital Territory</option>
-                <option value="Gombe">Gombe</option>
-                <option value="Imo">Imo</option>
-                <option value="Jigawa">Jigawa</option>
-                <option value="Kaduna">Kaduna</option>
-                <option value="Kano">Kano</option>
-                <option value="Katsina">Katsina</option>
-                <option value="Kebbi">Kebbi</option>
-                <option value="Kogi">Kogi</option>
-                <option value="Kwara">Kwara</option>
-                <option value="Lagos">Lagos</option>
-                <option value="Nasarawa">Nasarawa</option>
-                <option value="Niger">Niger</option>
-                <option value="Ogun">Ogun</option>
-                <option value="Ondo">Ondo</option>
-                <option value="Osun">Osun</option>
-                <option value="Oyo">Oyo</option>
-                <option value="Plateau">Plateau</option>
-                <option value="Rivers">Rivers</option>
-                <option value="Sokoto">Sokoto</option>
-                <option value="Taraba">Taraba</option>
-                <option value="Yobe">Yobe</option>
-                <option value="Zamfara">Zamfara</option>
-              </select>
-            </div>
-          </div>
-          
-            <div class="has-text-left">
-              <div class="input-group">
-                <p for="what_we_call_you">What would you like us to call you?</p>
-                <input
-                  type="text"
-                  id="what_we_call_you"
-                  placeholder=""
-                  />
-                  <!-- v-model="formData.what_we_call_you" -->
-              </div>
-            </div>
-            <div class="has-text-left">
-              <div class="input-group">
-                <p for="how_you_hear_about_us">How did you hear about us?</p>
-                <input
-                  type="text"
-                  id="how_you_hear_about_us"
-                  placeholder=""
-                  />
-                  <!-- v-model="formData.how_you_hear_about_us" -->
-              </div>
-            </div>
-            <div class="">
-              <!-- <div class="input-group">
-              <button class="button2" @click.stop="settings">
-                Back
-              </button>
-            </div> -->
-              <div class="input-group m-auto">
-                <button class="button fmt-button-2 is-fullwidth" type="submit">Submit</button>
-              </div>
-            </div>
-        </form>
+      data-netlify-honeypot="bot-field"
+      >
+      <input type="hidden" name="form-name" value="ask-question" />
+      <label v-for="(panelist, index) in panelists" :key="index">
+        <input
+          type="radio"
+          name="panelist"
+          :value="panelist"
+          @input="ev => updatePanelist"
+          :checked="panelist === currentPanelist"
+        />
+        <span>{{ panelist }}</span>
+      </label>
+      ...
+      <button>Submit</button>
+    </form>
+        
       </div>
       <!-- <div class="row">
         <h2>WANT TO JOIN THE INNER CIRCLE?</h2>
