@@ -52,8 +52,8 @@
         </div>
       </div>
       <div class="pt-5">
+        <!-- method="post" -->
         <form name="property_subscribers" 
-      method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="property_subscribers" />
