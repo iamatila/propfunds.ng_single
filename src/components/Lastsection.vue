@@ -52,9 +52,10 @@
         </div>
       </div>
       <div class="pt-5">
-        <form name="PropertySubscribers4/7/23"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field">
+        <form name="PropertySubscribers" netlify
+        >
+        <!-- data-netlify="true"
+        data-netlify-honeypot="bot-field" -->
       <input type="hidden" name="form-name" value="ask-question" />
           <div class="row has-text-left">
             <div class="input-group">
