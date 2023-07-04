@@ -52,7 +52,10 @@
         </div>
       </div>
       <div class="pt-5">
-        <form name="PropertySubscribers4/7/23" method="POST" netlify>
+        <form name="PropertySubscribers4/7/23" method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="ask-question" />
           <div class="row has-text-left">
             <div class="input-group">
               <p for="first_name">First Name</p>
@@ -100,8 +103,7 @@
               <!-- class="select" -->
               <select
                 id="country"
-                name="country[]"
-                multiple
+                name="country"
                 >
                 <!-- v-model="formData.country" -->
                 <option value="" selected disabled></option>
@@ -112,7 +114,7 @@
             <div class="input-group">
               <!-- <input type="text" id="state" placeholder="State" v-model="state"> -->
               <p for="state">State</p>
-              <select id="state" name="state[]" multiple
+              <select id="state" name="state" 
               >
               <!-- v-model="formData.state" -->
                 <option selected disabled>--Select State--</option>
